@@ -17,7 +17,7 @@ function smoothScrollTo(targetY, duration) {
         } else {
             // Once scroll is done, set the next scroll timeout
             setTimeout(() => {
-                const nextY = window.scrollY + Math.floor(Math.random() * 151) + 300;
+                const nextY = window.scrollY + Math.floor(Math.random() * 351) + 900;
                 if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
                     console.log("Reached the bottom of the page. Clicking the element...");
                     
@@ -54,7 +54,7 @@ function smoothScrollTo(targetY, duration) {
 
 // Start the scrolling process
 function startScrolling() {
-    const targetY = window.scrollY + Math.floor(Math.random() * 151) + 300;
+    const targetY = window.scrollY + Math.floor(Math.random() * 351) + 800;
     smoothScrollTo(targetY, 1000); // 1 second for smooth scroll
 }
 
